@@ -52,26 +52,5 @@ public class ContaBancaria {
 		this.saldo = saldo.add(valor);
 	}
 	
-	/**cadastra uma nova conta com  dados do terminal */
-	public ContaBancaria cadastrarNovaConta(Scanner sc) throws IOException {
-		ContaBancaria conta = new ContaBancaria();
-
-		System.out.println("Por favor, digite o número da Agência !");
-		conta.setAgencia(sc.next());
-
-		System.out.println("Por favor, digite o número da Conta ! ");
-		conta.setNumeroConta(sc.nextInt());
-
-		System.out.println("Por favor, digite o seu nome ! ");
-		conta.setNomeCliente(sc.next());
-
-		System.out.println("Por favor, digite o valor depositado! ");
-		conta.setSaldo(BigDecimal.valueOf(Double.valueOf(sc.next())));
-
-		System.out.println("\n Olá ".concat(conta.getNomeCliente())
-				+ ", obrigado por criar uma conta em nosso banco, sua agência é " + conta.getAgencia() + ", conta "
-				+ conta.getNumeroConta() + "\n e seu saldo de " + conta.getSaldo() + " já está disponível para saque.");
-
-		return conta;
-	}	 
+ 
 }
