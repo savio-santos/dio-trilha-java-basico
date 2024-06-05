@@ -21,8 +21,8 @@ classDiagram
     }
 
     class iPhone {
-        - String modelo
-        - String serialNumber
+        -String modelo
+        -String serialNumber
     }
 
     iPhone --> ReprodutorMusical
