@@ -1,6 +1,7 @@
 # Modelagem e Diagramação de um Componente iPhone
 
 classDiagram
+
     class ReprodutorMusical {
         +tocar()
         +pausar()
