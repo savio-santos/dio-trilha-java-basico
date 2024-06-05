@@ -1,8 +1,6 @@
-package com.contabanco;
 
-import java.io.IOException;
+
 import java.math.BigDecimal;
-import java.util.Scanner;
 
 public class ContaBancaria {
 	

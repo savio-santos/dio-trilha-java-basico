@@ -1,4 +1,4 @@
-package com.contabanco;
+
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -85,11 +85,12 @@ public class ContaTerminal {
 		conta.setNumeroConta(sc.nextInt());
 
 		System.out.println("Por favor, digite o seu nome ! ");
-		conta.setNomeCliente(sc.nextLine());
+		String nomeCliente = sc.nextLine();
+		conta.setNomeCliente(nomeCliente);
 
 		System.out.println("Por favor, digite o valor depositado! ");
 		conta.setSaldo(BigDecimal.valueOf(Double.valueOf(sc.next())));
-
+		
 		System.out.println("\n Olá ".concat(conta.getNomeCliente())
 				+ ", obrigado por criar uma conta em nosso banco, sua agência é " + conta.getAgencia() + ", conta "
 				+ conta.getNumeroConta() + "\n e seu saldo de " + conta.getSaldo() + " já está disponível para saque.");
